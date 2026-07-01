@@ -1,0 +1,33 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --forest: #1B4332;
+  --forest-mid: #2D6A4F;
+  --forest-light: #40916C;
+  --forest-pale: #D8F3DC;
+  --forest-faint: #F0FFF4;
+  --amber: #E76F00;
+  --amber-light: #F4A261;
+  --amber-pale: #FFF3E0;
+  --cream: #FAFAF7;
+  --slate: #1C1C1E;
+  --slate-mid: #3A3A3C;
+  --slate-muted: #6B6B6E;
+  --slate-border: #D1D1D6;
+  --slate-faint: #F2F2F7;
+  --white: #FFFFFF;
+  --danger: #C0392B;
+  --danger-pale: #FFF0EE;
+  --blue: #1565C0;
+  --blue-pale: #EBF4FF;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15px;
+  color: var(--slate);
+  background: var(--cream);
+}
+
+body { min-height: 100vh; }
+button { cursor: pointer; font-family: inherit; font-size: 14px; border: none; outline: none; transition: all 0.15s ease; }
+input, select, textarea { font-family: inherit; font-size: 14px; color: var(--slate); outline: none; transition: border-color 0.15s ease; }
+input:focus, select:focus, textarea:focus { border-color: var(--forest-light) !important; box-shadow: 0 0 0 3px rgba(64,145,108,0.12); }
+@media print { body { background: white; } .no-print { display: none !important; } }
